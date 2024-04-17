@@ -1,0 +1,28 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Composer</title>
+</head>
+<body>
+  <h1>Email Composer</h1>
+  <form action="/send-email" method="POST" enctype="multipart/form-data">
+    <label for="to">To:</label>
+    <input type="email" id="to" name="to" required><br><br>
+    
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required><br><br>
+    
+    <label for="text">Message:</label><br>
+    <textarea id="text" name="text" rows="4" cols="50" required></textarea><br><br>
+    
+    <label for="attachment">Choose File (PDF):</label>
+    <input type="file" id="attachment" name="attachment" accept=".pdf"><br><br>
+    
+    <button type="submit">Send Email</button>
+  </form>
+</body>
+</html>
